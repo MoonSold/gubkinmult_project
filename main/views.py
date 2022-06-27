@@ -15,7 +15,7 @@ class Main_Page(ListView):
     model = All_Mult
     template_name = 'main/mainpage.html'
     context_object_name = 'mults'
-
+ 
 class Season_Page(View):
     def get(self,request,slug):
         template = 'main/season.html' 
