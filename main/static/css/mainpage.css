@@ -1,0 +1,62 @@
+img {
+    object-fit: cover; 
+    max-width: 100%;;
+}
+
+.btn-secondary{
+    color: whitesmoke;
+    background: black;
+    border-radius: 0%;
+}
+
+.btn-group{
+    width: 100%;
+}
+
+header{
+    background-color: black;
+}
+
+#header button{
+    position: absolute;
+    color: black;
+    right: 0%;
+    top: 0%;
+    font-weight: 500;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+
+#element{ 
+    display: inline-block;
+    margin-left: 4%; 
+    margin-right: 4%;
+    margin-top: 75px;
+    text-align: center;
+} 
+
+.rating-mini {
+    display: inline-block;
+    font-size: 0;
+}
+
+.rating-mini span {
+    padding: 0;
+    font-size: 20px;
+    line-height: 1;
+    color: lightgrey;
+}
+
+.rating-mini > span:before {
+    content: '★';
+}
+
+.rating-mini > span.active {
+    color: gold;
+}
+
+    

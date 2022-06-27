@@ -1,0 +1,33 @@
+{% extends 'main/mainpage.html' %}
+{% load static %}
+{% block content %}
+<div class = 'container-fluid' >
+    <div class='row row-cols-1 row-cols-md-4 g-4' id = 'List'>
+    
+        {% for season in season %}
+            
+            {% if season.photo %}
+
+                <div class="col" id = 'element'>
+                    <div class="card" >
+                          <a href='{{ slug }}/{{ season.season_num }}'><img src="{{ season.photo.url }}" class="card-img-top" alt="Изображение"></a>
+                          <div class="card-body">
+                            <h5 class="card-title">{{ season.season_num }} сезон</h5>
+                            <p class="card-text">{{ season.description|slice:":100"|add:"..." }}</p>
+                             <div class="card-footer">
+                                  <small class="text-muted">{{season.data}}</small>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="rating-mini">
+                        <span class="active"></span>
+                        <span class="active"></span>
+                        <span class="active"></span>
+                        <span class="active"></span>	
+                        <span></span>    
+                    </div>
+                </div>
+
+            {% endif %}
+            {% endfor %}
+{% endblock %}
